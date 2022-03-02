@@ -209,9 +209,80 @@ body{
     transform: rotate(405deg);
 }
    
-   
-    
-
 /* navigation style end */
 
 /* navbar style end */
+
+/* header style start */
+
+.header{
+    margin-left: 8rem;
+    height: 100vh;
+    background-image:linear-gradient(to top, rgba(0,0,0,.7),rgba(0,0,0,.4)), url(../image/header-1.jpeg);
+    background-size: cover;
+}
+
+.brand-logo{
+ display: flex;
+ cursor: pointer;   
+
+}
+.brand-image{
+    
+}
+.brand-heading{
+    font-family: 'Josenfin Sans', sans-serif;
+    color: bisque;
+    font-size: 1.5rem;
+    font-weight: 400;
+    
+}
+
+.header-banner{
+    font-family: 'Josenfin Sans', sans-serif;
+    color: bisque;
+    height: 35rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.banner-heading{
+    margin-bottom: 0;
+    font-size: 3rem;
+    font-weight: 500;
+    animation: banner-animation 2s;
+}
+.banner-slowgan{
+    font-size: 1.5rem;
+    font-weight: 200;
+    animation: banner-animation 1.5s .5s backwards;
+}
+
+.banner-button{
+    border: none;
+    font-size: 2rem;
+    color: black;
+    width: 20rem;
+    padding: 1rem .5rem;
+    border-radius: 5rem;
+    background: linear-gradient(to right, gold, goldenrod);
+    cursor: pointer;
+    animation: banner-animation 1s 1s backwards;
+}
+
+.banner-button:hover{
+    background: linear-gradient(to left, gold, goldenrod);
+}
+@keyframes banner-animation {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/* header style end */
