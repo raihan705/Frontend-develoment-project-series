@@ -1,0 +1,217 @@
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* navbar style start */
+
+/* side navbar style start */
+
+.side-navbar{
+    width: 8rem;
+    height: 100%;
+    position: fixed;
+    background-color: #eee;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+.menu-icon{
+    margin-top: 1.7rem;
+    cursor: pointer;
+}
+.line{
+    height: .2rem;
+    width: 2rem;
+    background-color: #222;
+    margin-bottom: .2rem;
+}
+
+.line1, .line3{
+    width: 1.7rem;
+    transition: width .7s, color .8s;
+}
+
+.menu-icon:hover .line{
+    width: 2.5rem;
+    background-color: rgba(0, 100, 0, 0.932);
+}
+.social-icon-list{
+    list-style: none;
+    padding: 0;
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.social-link{
+    font-size: 2rem;
+    color: rgba(0, 0, 0, 0.644);
+    transition: color 1s;
+}
+
+.social-link:hover{
+    color: rgba(253, 192, 255, 0.712);
+}
+.sidebar-year{
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    color: grey;
+}
+/* side navbar style end */
+
+/* navigation style start */
+
+.navigation{
+   /* margin-left: 8rem;*/
+    position: fixed;
+    left: -14rem;
+    width: 22rem;
+    height: 100%;
+    background:linear-gradient(to top, rgba(34,32,41,1),rgba(34,32,41,.8)), url(../image/nav-bg.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transition: left .7s cubic-bezier(1,0,0,1);
+}
+.navigation-header{
+
+}
+.navigation-heading{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    font-size: 2rem;
+    color: bisque;
+    text-align: center;
+    letter-spacing: .1rem;
+
+}
+
+.navigation-search{
+    position: relative;
+}
+
+.navigation-input-search{
+    font-family: 'Josenfin Sans', sans-serif;
+    font-size: 1.5rem;
+    color: bisque;
+    width: 18rem;
+    background-color: rgb(5,5,5,.7);
+    padding: .5rem .4rem;
+    border: .1rem solid black;
+    border-radius: 5.5rem;
+    transition: background-color .4s;
+
+
+}
+
+.navigation-input-search:focus{
+    background-color: rgb(19, 18, 18, .5);
+    
+}
+
+.navigation-search-btn{
+    background: transparent;
+    border: none;
+    color: bisque;
+    font-size: 1.8rem;
+    position: absolute;
+    right: .7rem;
+    top: .4rem;
+    cursor: pointer;
+}
+
+.navigation-menu-list-items{
+    list-style: none;
+    padding: 0;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.navigation-item{
+    position: relative;
+}
+.navigation-link{
+    text-decoration: none;
+    color: bisque;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    font-size: 1.5rem;
+    transition: color .7s, font-size .8s, font-weight .5s;
+    
+}
+
+.navigation-link::before{
+   content: '';
+    width: 0;
+    height: .2rem;
+    background-color: beige;
+    position: absolute;
+    left: -4rem;
+    top: 1rem;
+    transition: width .5s cubic-bezier(1, 0.82, 0.165, 1);
+}
+.navigation-link::after{
+   content: '';
+    width: 0;
+    height: .2rem;
+    background-color: beige;
+    position: absolute;
+    right: -4rem;
+    top: 1rem;
+    transition: width .5s cubic-bezier(1, 0.82, 0.165, 1);
+}
+
+.navigation-link:hover{
+    color: rgb(146, 146, 90);
+    font-size: 2rem;
+    font-weight: 500;
+}
+.navigation-link:hover::before{
+    width: 2rem;
+}
+.navigation-link:hover::after{
+    width: 2rem;
+}
+
+.navigation-copyright{
+    color: bisque;
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+}
+
+.checkbox:checked ~ .navigation{
+    left: 8rem;
+}
+
+.checkbox:checked ~ .side-navbar .line1{
+    transform: rotate(-405deg) translate(-5px, 6px);
+}
+.checkbox:checked ~ .side-navbar .line2{
+    opacity: 0;
+}
+.checkbox:checked ~ .side-navbar .line3{
+    transform: rotate(405deg);
+}
+   
+   
+    
+
+/* navigation style end */
+
+/* navbar style end */
