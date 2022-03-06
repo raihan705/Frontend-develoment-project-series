@@ -286,3 +286,131 @@ body{
 }
 
 /* header style end */
+
+/* About us section style start */
+
+.about-us{
+    margin-left: 8rem;
+    background-color: #dedede;
+    display: flex;
+    
+
+}
+.about-us-content{
+    /* flex: 0 1 50%; */
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Josefin Sans', sans-serif;
+    
+}
+
+.about-us-heading{
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: rgb(98, 107, 80);
+    
+}
+.about-us-underline{
+
+}
+.small-underline{
+    width: 5rem;
+    height: .1rem;
+    background-color: red;
+    margin: 0 auto .7rem auto;
+}
+.big-underline{
+    width: 10rem;
+    height: .1rem;
+    background-color: red;
+}
+.sub-heading{
+    font-size: 2rem;
+    font-weight: 300;
+    color: rgb(98, 107, 80);
+}
+.about-us-paragraph{
+    font-size: 1.5rem;
+    color: black;
+    text-align: justify;
+    font-weight: 300;
+    padding-left: 2rem;
+    
+    
+}
+
+.about-us-button{
+    background-color: transparent;
+    font-size: 1.8rem;
+    color: rgb(161, 85, 85);
+    text-transform: capitalize;
+    padding: .5rem .7rem;
+    cursor: pointer;
+    border: .2rem solid rgb(22, 31, 5);
+    border-radius: 4rem;
+}
+.about-us-arrow{
+    transition: margin-left 1s;
+}
+.about-us-button:hover{
+    background: linear-gradient(to left, gold, goldenrod);
+}
+.about-us-button:hover .about-us-arrow{
+    margin-left: 1.5rem;
+}
+
+
+.about-us-image-right-side{
+    /* flex: 1 1; */
+    flex-basis: 50%;
+    position: relative;
+   
+    
+}
+
+.about-image{
+    width: 25rem;
+    /* position: absolute;
+    left: 30%;
+    top: 30%; */
+    
+}
+
+.image1{
+   
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    
+}
+.image2{
+
+    position: absolute;
+    top: 35%;
+    left: 35%;
+}
+.image3{
+
+    position: absolute;
+    top: 15%;
+    left: 15%;
+}
+.image4{
+
+    position: absolute;
+    top: 40%;
+    left: 40%;
+
+}
+.about-image:hover{
+    cursor: pointer;
+    width: 26rem;
+}
+
+
+
+/* About us section style end */
