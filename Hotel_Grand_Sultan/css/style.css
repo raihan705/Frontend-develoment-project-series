@@ -294,6 +294,7 @@ body{
     background-color: #dedede;
     display: flex;
     
+    
 
 }
 .about-us-content{
@@ -352,6 +353,7 @@ body{
     cursor: pointer;
     border: .2rem solid rgb(22, 31, 5);
     border-radius: 4rem;
+    margin-bottom: .7rem;
 }
 .about-us-arrow{
     transition: margin-left 1s;
@@ -377,6 +379,7 @@ body{
     /* position: absolute;
     left: 30%;
     top: 30%; */
+    transition: width 1s;
     
 }
 
@@ -414,3 +417,92 @@ body{
 
 
 /* About us section style end */
+
+/* Room section style start */
+
+.room-section{
+    margin-left: 9rem;
+}
+.rooms-common-heading{
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: rgb(98, 107, 80);
+    text-align: center;
+}
+.big-underlines{
+    width: 10rem;
+    height: .1rem;
+    background-color: red;
+    margin: auto;
+}
+.rooms-cards-wrapper{
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #dedede;
+    
+}
+.room-card{
+    width: 45rem;
+    background-color: bisque;
+    margin: 1rem;
+    box-shadow: 4px 4px 4px goldenrod;
+    border-radius: 2rem;
+    transition: transform .6s .2s;
+    
+   
+}
+.room-card:hover{
+    transform: scale(.98, .98);
+    opacity: .9;
+}
+.room-image{
+    width: 100%;
+}
+.room-card-content{
+    background-color: rgb(245, 216, 181);
+    margin: .5rem;
+    
+    
+}
+.room-card-heading{
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem;
+    margin: 0;
+}
+.room-card-paragraph{
+    font-size: 1.5rem;
+    margin: 0;
+}
+.room-price{
+    text-align: end;
+    font-size: 2rem;
+}
+.room-button{
+    background-color: transparent;
+    font-size: 1.8rem;
+    color: rgb(161, 85, 85);
+    text-transform: capitalize;
+    padding: .5rem .7rem;
+    cursor: pointer;
+    border: .2rem solid rgb(22, 31, 5);
+    border-radius: 4rem;
+    display: block;
+    margin: .5rem auto;
+}
+
+.room-button:hover{
+    background: linear-gradient(to left, gold, goldenrod);
+}
+.room-card-button-arrow{
+    transition: margin-left 1s;
+}
+
+.room-button:hover .room-card-button-arrow{
+    margin-left: 1.5rem;
+}
+
+/* Room section style end */
