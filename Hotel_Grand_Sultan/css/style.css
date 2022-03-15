@@ -421,7 +421,7 @@ body{
 /* Room section style start */
 
 .room-section{
-    margin-left: 9rem;
+    margin-left: 8rem;
 }
 .rooms-common-heading{
     font-size: 2.5rem;
@@ -481,6 +481,12 @@ body{
     text-align: end;
     font-size: 2rem;
 }
+.all-rooms{
+    background-color: #fddb3a;
+    margin-left: 22rem;
+    margin-right: 22rem;
+    border-radius: 10rem;
+}
 .room-button{
     background-color: transparent;
     font-size: 1.8rem;
@@ -505,4 +511,63 @@ body{
     margin-left: 1.5rem;
 }
 
+
+
 /* Room section style end */
+
+/* Customer coment style section start */
+
+.customer-comments{
+    margin-left: 8rem;
+    background-color: rgb(202, 197, 191);
+}
+.customer-heading{
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem;
+    margin: 0;
+}
+.customers-paragraph{
+    width: 60%;
+    font-size: 1.6rem;
+    margin: 2rem auto 5rem auto;
+    color: black;
+}
+.cusomer-card-wraper{
+    display: flex;
+    justify-content: space-between;
+}
+.customer-card{
+    background-color: #dedede;
+    width: 60rem;
+    display: flex;
+    margin: 3rem auto 3rem auto;
+    height: 25rem;
+    border-radius: 1rem;
+}
+.customer-card-image{
+    margin-left: -.5rem;
+    margin-top: 1rem;
+}
+.customer-image{
+    width: 25rem;
+    border-radius: 1rem;
+}
+.customer-info{
+    padding: .8rem;
+}
+.customer-name{
+    font-size: 2rem;
+
+}
+.customer-paragraph1{
+    font-size: 1.7rem;
+    text-align: center;
+}
+.customer-paragraph2{
+    font-size: 1.5;
+    font-style: italic;
+    text-align: justify;
+
+}
+/* customer comment section style end */
