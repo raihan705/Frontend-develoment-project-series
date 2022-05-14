@@ -169,6 +169,7 @@ body{
     border: 1px solid rgb(177, 177, 128);
     border-radius: 2rem;
     margin-top: .3rem;
+    z-index: 100;
 }
 .second-nav-item:first-child:hover .dropdown{
     visibility: visible;
@@ -218,6 +219,135 @@ body{
     font-size: 1.8rem;
     
 }
+
+/* banner section style start */
+
+.banner{
+    margin-top: 1.5rem;
+    display: grid;
+    grid-template-columns: minmax(6rem, 1fr) repeat(8, minmax(min-content, 16rem)) minmax(6rem, 1fr);
+    /* grid-template-rows: repeat(3, min-content); */
+    gap: 1.5rem;
+    height: 70vh;
+}
+.banner-property{
+    grid-column: 2/10;
+    /* background-color: #eff7f0; */
+    position: relative;
+}
+.banner-content{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    z-index: 10;
+}
+.banner-heading{
+    font-size: 6rem;
+    font-weight: 500;
+    color: #9852f9;
+    margin-bottom: 1.5rem;
+}
+.banner-button{
+    font-size: 2rem;
+    width: 20rem;
+    height: 5rem;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, #093779dd 34%, rgba(8,74,137,1) 47%, rgba(0,212,255,1) 100%);
+    color: #e3f6f5;
+    border: .1rem solid #093775;
+    border-radius: 1rem;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.banner-button-text-one{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    transition: all .4s .1s;
+}
+.banner-button-text-two{
+    position: absolute;
+    top: 150%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    
+
+    
+}
+
+.banner-button:hover .banner-button-text-one{
+    top: -50%;
+    
+}
+.banner-button:hover .banner-button-text-two{
+    top: 50%;
+    color: #e3f6f5;
+}
+
+
+.slideshow{
+    height: 70%;
+    overflow: hidden;
+    position: relative;
+}
+.slide-image-wrapper{
+    display: flex;
+    width: 400%;
+    height: 100%;
+    position: relative;
+    animation: slideshow-anim 20s infinite;
+}
+.slide-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+
+}
+
+@keyframes slideshow-anim{
+    0%{left: 0;}
+    10%{left: 0;}
+    15%{left: -100%;}
+    25%{left: -100%;}
+    30%{left: -200%;}
+    40%{left: -200%;}
+    45%{left: -300%;}
+    55%{left: -300%;}
+    60%{left: -200%;}
+    70%{left: -200%;}
+    75%{left: -100%;}
+    85%{left: -100%;}
+    90%{left: 0;}
+    100%{left: 0;}
+    
+
+
+}
+
+.slide-button{
+    width: 2rem;
+    height: 2rem;
+    background-color: #bbb;
+    border: .2rem solid yellow;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    z-index: 10;
+    position: absolute;
+    top: 95%;
+    transform: translateX(-50%);
+
+}
+
+
+/* banner section style end */
 
 
 
