@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;1,100;1,300;1,400;1,500;1,700;1,800&family=Oxygen&family=Oxygen+Mono&display=swap");
+
+:root {
+  --darkblue: #2b4161;
+  --lightgray: #b4bec9;
+  --lightwhite: #deefe7;
+  --white: #ffffff;
+  --naviblue: #159a9c;
+  --black: #002333;
+  --font-size: 1.3rem;
+  --mono: "Oxygen mono", monospace;
+  --sans: Oxygen, sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--sans);
+  background-color: var(--black);
+  color: var(--white);
+  font-size: var(--font-size);
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+a {
+  color: var(--lightgray);
+}
+
+a:hover {
+  color: var(--darkblue);
+  text-decoration: none;
+}
+
+#intro {
+  background-color: var(--naviblue);
+  padding-bottom: 10rem;
+}
+
+#intro p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
